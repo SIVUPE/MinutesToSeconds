@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>MinutesToSeconds</title>
 </head>
 <body>
     <div class="container ">
-        <p>
-            <label>Minutes</label>
-            <input id="Minutes" type="number" placeholder="Minutes"
-            oninput="Minutes(this.value)"
-            onchange="Minutes(this.value)">
+        <h1>Convert Minutes To Seconds</h1>
+        <p class="input">
+            <label data-output>Minutes</label>
+            <input id="Minutes" type="number" placeholder="Minutes">
         </p>
-        
-        <p>seconds: <span id="outputSeconds"></span></p>
-        <input type="button" value="submit">
+        <button onclick="convertMinutesToSeconds()" value="Convert"> Convert </button>
     </div>
     <script src="/script/code.js"></script>
 </body>

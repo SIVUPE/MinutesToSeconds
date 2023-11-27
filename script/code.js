@@ -1,18 +1,10 @@
-function convertToseconds(minutes) {
-    var perMinutes = 60;
-    var perSeconds = 60;
-    var totalSec = documents.getElementById("OnInput").innerHTML
+function convertMinutesToSeconds() {
+    var minutesInput = document.getElementById("Minutes").value;
+    if (!isNaN(minutesInput)) {
+        var seconds = minutesInput * 60;
+        document.querySelector('[data-output]').textContent = (minutesInput + " minutes is equal to " + seconds + " seconds.");
+    } else {
+        alert("Please enter a valid number for minutes.");
+    }
     
-    var minutes = documents.getElementById("minutes").value;
-    var Seconds = +documents.getElementById("Seconds").value;
-    
-    document.getElementById("calculate").innerHTML;
 }
-
-
-
-// console.log(toSeconds("1:29.460"));   // returns 89.460
-
-
-
- 
